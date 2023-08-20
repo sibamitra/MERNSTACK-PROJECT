@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Your global CSS file or component-specific styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons .MuiIconButton-root:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons .MuiIconButton-root:hover svg {
+  color: #3f51b5; /* Change to your desired color */
+  transition: color 0.3s ease;
+}
+
+/* Additional hover effects for links */
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a:hover::before {
+  content: "> ";
+}
+
+.social-icons a:hover::after {
+  content: " <";
+}
+
+/* Styling for the Load More and Load All News buttons */
+.MuiButton-root {
+  margin: 0 4px;
+}
+
+
+.footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 10;
+  width: 100%;
+  left: 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
